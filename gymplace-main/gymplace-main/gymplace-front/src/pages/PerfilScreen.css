@@ -1,0 +1,146 @@
+.perfil__bg {
+    padding: 10rem 0rem;
+}
+
+.perfil__contenido {
+    /* margin-bottom: 10rem; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .perfil__contenido {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.perfil__contenido__izquierda {
+    border: 1px solid #eee;
+    padding: 2rem 1rem;
+    overflow: hidden;
+}
+
+.perfil__contenido__derecha {
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.perfil__titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.perfil__imagen-contenedor {
+    position: relative;
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+
+.perfil__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    position: relative;
+}
+
+.perfil__icono-lapiz {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease;
+}
+
+.perfil__icono-lapiz:hover {
+    background-color: #f0f0f0;
+}
+
+.perfil__icono-lapiz svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #333;
+}
+
+.perfil__input-oculto {
+    display: none;
+}
+
+.perfil__boton {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+
+.perfil__opcion__cerrarSesion {
+    background-color: #dc3545;
+}
+
+.perfil__boton:hover {
+    background-color: #5a9870;
+}
+
+.perfil__boton--cerrar {
+    background-color: #dc3545;
+}
+
+.perfil__boton--cerrar:hover {
+    background-color: #b02a37;
+}
+
+
+.perfil__opcion {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    overflow: hidden;
+}
+
+.perfil__opcion:hover {
+    background-color: #f7f7f7;
+}
+
+.perfil__opcion__icono {
+    font-size: 1.5rem;
+    color: #6cae82;
+    margin-right: 1rem;
+}
+
+.perfil__opcion__texto {
+    font-size: 1.1rem;
+    color: #333;
+    flex-grow: 1;
+}

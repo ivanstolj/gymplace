@@ -1,0 +1,31 @@
+.logo__contenedor {
+    position: relative;
+    width: fit-content;
+    height: 5.5rem;
+}
+
+.logo__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.logo__img--negro {
+    opacity: 1;
+    z-index: 1;
+}
+
+.logo__img--verde {
+    opacity: 0;
+    z-index: 2;
+}
+
+.logo__contenedor:hover .logo__img--negro {
+    opacity: 0;
+}
+
+.logo__contenedor:hover .logo__img--verde {
+    opacity: 1;
+}

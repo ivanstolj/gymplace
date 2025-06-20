@@ -1,0 +1,87 @@
+/* ---------- contenedor general ---------- */
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+/* ---------- fondo y posicionamiento ---------- */
+.footer__bg {
+    position: static;
+    /* o eliminá la propiedad */
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 100;
+}
+
+/* ---------- estructura principal ---------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 0;
+}
+
+/* ---------- logo ---------- */
+.footer__logo__contenedor {
+    position: relative;
+    width: fit-content;
+    height: 5.5rem;
+}
+
+.footer__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5.5rem;
+}
+
+/* ---------- enlaces sociales ---------- */
+.footer__enlaces {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer__enlaces a {
+    font-size: 2.2rem;
+    color: #384152;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer__enlaces a:hover {
+    color: #6cae82;
+}
+
+/* ---------- versión móvil ---------- */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer__enlaces {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__logo__contenedor {
+        position: static;
+        height: auto;
+    }
+
+    .footer__logo {
+        position: static;
+        height: 4rem;
+    }
+}

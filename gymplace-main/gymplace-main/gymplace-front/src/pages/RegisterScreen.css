@@ -1,0 +1,62 @@
+.register-screen {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+.register-screen__imagen {
+    flex: 1;
+    background-image: url("../../public/loginBanner.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.register-screen__formulario {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 4rem;
+    background: linear-gradient(to bottom right, #ffffff, #f3fdf7);
+    position: relative;
+    overflow: hidden;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Ondas decorativas suaves con gradientes circulares */
+.register-screen__formulario::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 20% 20%, #6cae82 15%, transparent 70%),
+        radial-gradient(circle at 80% 80%, #c2e3d1 20%, transparent 70%),
+        radial-gradient(circle at 60% 30%, #c8f1d9 10%, transparent 70%);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/* Asegura que el formulario quede encima */
+.form {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .register-screen {
+        flex-direction: column;
+    }
+
+    .register-screen__imagen {
+        display: none;
+    }
+
+    .register-screen__formulario {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+}
